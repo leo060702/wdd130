@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - White Water Rafting</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+    <style>
+        .hero {
+            background: url('images/hero_transparency_1024.png') no-repeat center center;
+            background-size: cover;
+            text-align: center;
+            color: white;
+            padding: 100px 20px;
+            position: relative;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        .intro, #history, #adventure {
+            max-width: 800px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            color: #333;
+            text-align: left;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .intro p, #history p, #adventure p, #adventure ul {
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+        .intro img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .social-links a {
+            display: inline-block;
+        }
+        .social-links img {
+            width: 40px;
+            height: 40px;
+        }
+        .social-links a:nth-child(1) img:hover {
+            content: url('images/facebook-hover.png');
+        }
+        .social-links a:nth-child(2) img:hover {
+            content: url('images/twitter-hover.png');
+        }
+        .social-links a:nth-child(3) img:hover {
+            content: url('images/instagram-hover.png');
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/z-crossedoars.jpeg" alt="White Water Rafting Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Trips</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="hero">
+            <h1>White Water Rafting</h1>
+            <div class="intro">
+                <p>Experience the thrill of The Cascade River – a premier white-water rafting destination just three hours from Los Angeles. Nestled in the heart of breathtaking canyons and surrounded by lush forests, The Cascade River offers rapids for all skill levels, from gentle flows to adrenaline-pumping Class V rapids.</p>
+                <img src="images/rafting12_1024.jpg" alt="Rafting Adventure">
+            </div>
+        </div>
+        
+        <section id="history">
+            <h2>History</h2>
+            <p>For decades, The Cascade River has been a top choice for adventure seekers looking to conquer the rapids. With its rich history and exhilarating waters, it continues to be a must-visit destination for rafters from all over the country.</p>
+        </section>
+        
+        <section id="adventure">
+            <h2>Adventure Awaits You!</h2>
+            <div class="adventure-images">
+                <img src="images/rafting20_600.jpg" alt="Rafting Scene 1">
+                <img src="images/rafting47_600.jpg" alt="Rafting Scene 2">
+                <img src="images/rafting59_600.jpg" alt="Rafting Scene 3">
+                <img src="images/rafting64_600.jpg" alt="Rafting Scene 4">
+                <img src="images/rafting65_600.jpg" alt="Rafting Scene 5">
+            </div>
+            <p>Choose your adventure:</p>
+            <ul>
+                <li><strong>Beginner’s Delight:</strong> Enjoy a scenic float with mild rapids, perfect for families and first-time rafters.</li>
+                <li><strong>Intermediate Rush:</strong> Challenge yourself with a mix of moderate rapids and breathtaking landscapes.</li>
+                <li><strong>Expert’s Extreme:</strong> For the seasoned adventurer, tackle the intense Class IV and V rapids for the ultimate thrill.</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 White Water Rafting | Created by Zhili Zhong</p>
+        <nav class="social-links">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/Twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/ins.png" alt="Instagram"></a>
+        </nav>
+    </footer>
+</body>
+</html>
