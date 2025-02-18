@@ -44,7 +44,7 @@ nav ul li a.active {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url('rafting-hero.jpg') no-repeat center center/cover;
+    background: url('../images/rafting-hero.jpg') no-repeat center center/cover;
     height: 400px;
     color: white;
     padding: 40px;
