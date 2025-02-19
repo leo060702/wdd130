@@ -33,6 +33,7 @@ main {
     padding: 2rem;
 }
 
+/* 标题样式 */
 h1 {
     color: darkblue;
 }
@@ -45,6 +46,7 @@ section {
     margin-bottom: 2rem;
 }
 
+/* 示例框样式 */
 .example {
     background: #fff;
     border: 1px solid #ddd;
@@ -53,6 +55,7 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* 页脚样式 */
 footer {
     background: #333;
     color: #fff;
@@ -63,8 +66,9 @@ footer {
     width: 100%;
 }
 
+/* 图片样式 */
 img {
-    width: 200;
+    width: 200px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
@@ -74,10 +78,12 @@ img {
     border-radius: 10px;
 }
 
+/* 段落样式 */
 p {
     padding: 10px;
 }
 
+/* 链接样式 */
 a {
     color: #0066cc;
 }
@@ -85,33 +91,46 @@ a {
 a:hover {
     color: #004080;
 }
+
+/* 盒子选择器 */
+.box {
+    background: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* main img 浮动修正 */
+main img {
+    float: right;
+    margin-left: 10px;
+}
+
+/* aside 位置修正 */
+aside {
+    position: relative;
+    padding: 10px;
+    background: #f4f4f4;
+}
+
+/* aside h2 位置修正 */
+aside h2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    border-radius: 5px;
+}
+
 /* Hometown Section Styling */
 .hometown {
     background: #fff;
     border: 1px solid #ddd;
     padding: 1.5rem;
-    margin: 2rem auto; /* Ensure it's spaced out from other sections */
+    margin: 2rem auto;
     width: 90%;
-    max-width: 600px; /* Limit maximum width for readability */
+    max-width: 600px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    border-radius: 8px;
-}
-
-.hometown img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    margin-bottom: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-.hometown p {
-    font-size: 1rem;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
+    
