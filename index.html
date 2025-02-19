@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leo Zhong | WDD130</title>
+    <title>Zhili Zhong | WDD130</title>
     <meta name="description" content="Leo, Zhili Zhong, Homepage">
-    <meta name="author" content="Leo Zhong">
+    <meta name="author" content="Zhili Zhong">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href="#">Home</a>
-            <a href="#about">About Me</a>
-            <a href="https://www.chinaservicesinfo.com/s/202306/14/WS648958cc498ea274927bf680/dramatic-summer-night-life-in-xiangyang.html" target="_blank">Xiangyang Nightlife</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="https://www.chinaservicesinfo.com/s/202306/14/WS648958cc498ea274927bf680/dramatic-summer-night-life-in-xiangyang.html" target="_blank">Xiangyang Nightlife</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Leo Zhong | WDD130</h1>
+        <h1>Zhili Zhong | WDD130</h1>
         <p>Hello! My name is Leo. This is a simple personal webpage created to share a little about myself.</p>
 
         <!-- About Section -->
@@ -30,13 +32,15 @@
             </div>
         </section>
 
+        <!-- My Photo Section -->
         <section>
             <h2>My Photo</h2>
-            <img src="images/profile.png" alt="My photo" style="width: 200px; height: 200px; object-fit: cover; margin: 0 auto; display: block;">
+            <img src="images/profile.png" alt="My photo" class="profile-img">
         </section>
 
+        <!-- Hometown Section -->
         <section id="hometown">
-            <h2 style="text-align: center;">Xiangyang, China</h2>
+            <h2 class="hometown-title">Xiangyang, China</h2>
             <div class="hometown">
                 <img src="https://www.chinaservicesinfo.com/images/202306/14/648958cc498ea27454d0eac7.jpeg" alt="Xiangyang, China">
                 <p>"Xiangyang is a historic city in Hubei Province, known for its rich cultural heritage, scenic beauty, and ancient architecture. It has played a significant role in Chinese history and remains a charming destination for visitors today."</p>
@@ -46,7 +50,11 @@
         <!-- Contact Section -->
         <section id="contact">
             <h2>Contact Me</h2>
-            <p>Check out more about Xiangyang's night life: <a href="https://www.chinaservicesinfo.com/s/202306/14/WS648958cc498ea274927bf680/dramatic-summer-night-life-in-xiangyang.html" target="_blank">Dramatic Summer Night Life in Xiangyang</a></p>
+            <p>Check out more about Xiangyang's night life: 
+                <a href="https://www.chinaservicesinfo.com/s/202306/14/WS648958cc498ea274927bf680/dramatic-summer-night-life-in-xiangyang.html" target="_blank">
+                    Dramatic Summer Night Life in Xiangyang
+                </a>
+            </p>
         </section>
     </main>
 
