@@ -1,137 +1,109 @@
-/* Class Selectors */
+/* 让整个页面居中 */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
 }
 
-header {
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-nav {
-    background-color: darkblue;
-    padding: 10px;
-}
-
-nav a {
-    color: white;
-    display: block;
-    padding: 20px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
+/* 设置最大宽度并居中 */
 main {
-    padding: 2rem;
-}
-
-/* 标题样式 */
-h1 {
-    color: darkblue;
-}
-
-h2 {
-    color: #333;
-}
-
-section {
-    margin-bottom: 2rem;
-}
-
-/* 示例框样式 */
-.example {
-    background: #fff;
-    border: 1px solid #ddd;
-    padding: 1.5rem;
-    margin-top: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* 页脚样式 */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* 图片样式 */
-img {
-    width: 200px;
-    height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-}
-
-/* 段落样式 */
-p {
-    padding: 10px;
-}
-
-/* 链接样式 */
-a {
-    color: #0066cc;
-}
-
-a:hover {
-    color: #004080;
-}
-
-/* 盒子选择器 */
-.box {
-    background: #f0f0f0;
+    max-width: 900px;
+    margin: auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    margin: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
 }
 
-/* main img 浮动修正 */
-main img {
+/* 修正导航栏 */
+nav {
+    background-color: #264969;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none; /* 去掉 `•` */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* 让 `h1` 保持醒目 */
+h1 {
+    text-align: center;
+    font-size: 28px;
+}
+
+/* 调整 "My Photo" 图片的位置 */
+.profile-img {
     float: right;
-    margin-left: 10px;
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px 0 20px 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-/* aside 位置修正 */
-aside {
-    position: relative;
-    padding: 10px;
-    background: #f4f4f4;
+/* 让 "hometown" 部分居中 */
+.hometown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-/* aside h2 位置修正 */
-aside h2 {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background: rgba(0, 0, 0, 0.1);
-    padding: 5px;
+.hometown img {
+    width: 200px;
     border-radius: 5px;
 }
 
-/* Hometown Section Styling */
-.hometown {
-    background: #fff;
-    border: 1px solid #ddd;
-    padding: 1.5rem;
-    margin: 2rem auto;
-    width: 90%;
-    max-width: 600px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    
+/* 让 Interests 部分的列表对齐 */
+.interests {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.interests ul {
+    padding-left: 20px;
+}
+
+/* 调整 Aside (Latest Updates) */
+aside {
+    background-color: #e8e8e8;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+aside h2 {
+    background-color: transparent; /* 取消背景色 */
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* 让 Footer 居中，并增强可读性 */
+footer {
+    background-color: #264969;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
