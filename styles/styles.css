@@ -1,91 +1,39 @@
-/* 让整个页面居中 */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+/* Reset 部分，去掉 Universal Selector，改为具体标签 */
+body, h1, h2, h3, p, ul, li, img, figure, blockquote {
     margin: 0;
     padding: 0;
 }
 
-/* 设置最大宽度并居中 */
-main {
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
-    background-color: white;
+/* 确保 box-sizing 仅作用于必要元素 */
+body, header, nav, main, section, footer, aside, img, input, select, textarea, button {
+    box-sizing: border-box;
 }
 
-/* 修正导航栏 */
-nav {
-    background-color: #264969;
-    padding: 15px 0;
-    text-align: center;
-}
+/* 修正 CSS 注释 */
+ /* Class Selectors */
 
-nav ul {
-    list-style: none; /* 去掉 `•` */
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-/* 让 `h1` 保持醒目 */
-h1 {
-    text-align: center;
-    font-size: 28px;
-}
-
-/* 调整 "My Photo" 图片的位置 */
-.profile-img {
-    float: right;
-    width: 180px;
-    height: auto;
-    border-radius: 10px;
-    margin: 10px 0 20px 20px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
-
-/* 让 "hometown" 部分居中 */
-.hometown {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* 修正 `.box` 选择器 */
+.box {
     background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
-
-.hometown img {
-    width: 200px;
+    padding: 15px;
     border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-/* 让 Interests 部分的列表对齐 */
-.interests {
-    background-color: #f9f9f9;
-    padding: 20px;
+/* 让 main img 居中，而不是 float 右对齐 */
+main img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.interests ul {
-    padding-left: 20px;
-}
-
-/* 调整 Aside (Latest Updates) */
+/* 调整 aside 的定位方式 */
 aside {
+    display: flex;
+    flex-direction: column;
     background-color: #e8e8e8;
     padding: 15px;
     border-radius: 10px;
@@ -93,17 +41,9 @@ aside {
     margin-top: 20px;
 }
 
+/* 修正 aside h2 让其正常显示 */
 aside h2 {
-    background-color: transparent; /* 取消背景色 */
     font-size: 22px;
     font-weight: bold;
-}
-
-/* 让 Footer 居中，并增强可读性 */
-footer {
-    background-color: #264969;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
+    margin-bottom: 10px;
 }
