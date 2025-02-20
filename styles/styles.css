@@ -1,18 +1,25 @@
-/* Reset 部分，去掉 Universal Selector，改为具体标签 */
-body, h1, h2, h3, p, ul, li, img, figure, blockquote {
+/* 基础样式，去掉通用选择器，改用具体标签 */
+body, h1, h2, h3, p, ul, li, img, figure, blockquote, section, aside {
     margin: 0;
     padding: 0;
 }
 
-/* 确保 box-sizing 仅作用于必要元素 */
+/* 确保 box-sizing 仅应用于特定元素 */
 body, header, nav, main, section, footer, aside, img, input, select, textarea, button {
     box-sizing: border-box;
 }
 
-/* 修正 CSS 注释 */
+/* 确保所有文本字体 */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* CSS 注释 */
  /* Class Selectors */
 
-/* 修正 `.box` 选择器 */
+/* `.box` 样式 */
 .box {
     background-color: #f9f9f9;
     padding: 15px;
@@ -20,17 +27,17 @@ body, header, nav, main, section, footer, aside, img, input, select, textarea, b
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-/* 让 main img 居中，而不是 float 右对齐 */
+/* 让 `main img` 居中，而不是 float 右对齐 */
 main img {
     display: block;
     max-width: 100%;
     height: auto;
-    margin: 20px auto;
+    margin: 20px auto; /* 居中 */
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-/* 调整 aside 的定位方式 */
+/* 修正 `aside` 位置 */
 aside {
     display: flex;
     flex-direction: column;
@@ -41,9 +48,65 @@ aside {
     margin-top: 20px;
 }
 
-/* 修正 aside h2 让其正常显示 */
+/* `aside h2` 标题修正，移除 `position: absolute;` */
 aside h2 {
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+/* 让 `nav ul` 菜单横向排列 */
+nav {
+    background-color: #264969;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* `h1` 居中 */
+h1 {
+    text-align: center;
+    font-size: 28px;
+}
+
+/* 让 `hometown` 部分居中 */
+.hometown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.hometown img {
+    width: 200px;
+    border-radius: 5px;
+}
+
+/* `footer` 样式 */
+footer {
+    background-color: #264969;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
 }
