@@ -1,18 +1,10 @@
 /* General Styles */
-body, h1, h2, h3, p, ul, li, img, figure, blockquote {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
     color: #333;
-}
-
-/* 确保 box-sizing: border-box 只应用于 body 及常见布局元素 */
-body, header, nav, main, section, footer, aside, img, input, select, textarea, button {
-    box-sizing: border-box;
 }
 
 /* Header Styles */
@@ -27,6 +19,8 @@ header {
 
 nav ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
 }
 
@@ -44,7 +38,7 @@ nav ul li a.active {
     text-decoration: underline;
 }
 
-/* Hero Section */
+/* Hero Section (Home Page) */
 .hero {
     display: flex;
     align-items: center;
@@ -65,6 +59,7 @@ nav ul li a.active {
 
 .hero h1 {
     font-size: 36px;
+    margin: 0;
 }
 
 .hero p {
@@ -192,20 +187,126 @@ footer {
     padding: 20px;
     margin-top: 20px;
 }
-
-/* 修正 aside 位置 */
-aside {
-    position: relative;
+/* 优化 feature-box，使内容对齐 */
+.feature-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
-aside h2 {
-    position: absolute;
+.feature-item {
+    max-width: 300px;
+    text-align: center;
 }
 
-/* 调整 Google Map */
+.feature-text {
+    max-width: 500px;
+}
+
+/* 优化团队成员图片的显示 */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.employee {
+    width: 180px;
+    text-align: center;
+}
+
+.employee img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* 调整 extra images 让它们在一行内 */
+.extra-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+/* Contact Form Styling */
+.contact-form {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.contact-form form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #264969;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #1b3a57;
+}
 .google-map {
     border: 0;
     width: 100%;
-    max-width: 600px;
+    max-width: 600px; /* 防止地图过大 */
     height: 300px;
 }
