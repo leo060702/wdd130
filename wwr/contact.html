@@ -7,7 +7,7 @@
     <meta name="author" content="Zhili Zhong">
     <title>Contact Us - White Water Rafting</title>
     <link rel="stylesheet" href="styles/rafting.css">
-        <!-- Google Fonts Preconnect -->
+    <!-- Google Fonts Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="images/z-crossedoars.jpeg" alt="White Water Rafting Logo">
+        <img src="images/z-crossedoars.jpeg" alt="White Water Rafting Logo">
         </div>
         <nav>
             <ul>
@@ -37,50 +37,61 @@
                 <p><strong>Email:</strong> info@wwr.com</p>
             </div>
             <div class="map">
-               <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209086.5911815912!2d-118.62773837464442!3d35.7546710976464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c06637a536f5eb%3A0xbbeae3c8302fd01a!2sKernville%2C%20CA%2093238!5e0!3m2!1sen!2sus!4v1708292330000!5m2!1sen!2sus" 
-    width="100%" 
-    height="300" 
-    style="border:0;" 
-    allowfullscreen="" 
-    loading="lazy" 
-    referrerpolicy="no-referrer-when-downgrade">
-</iframe>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209086.5911815912!2d-118.62773837464442!3d35.7546710976464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c06637a536f5eb%3A0xbbeae3c8302fd01a!2sKernville%2C%20CA%2093238!5e0!3m2!1sen!2sus!4v1708292330000!5m2!1sen!2sus" 
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
         </section>
         
         <section class="team">
             <h2>Meet Our Team</h2>
             <div class="team-container">
-                <div class="employee"><img src="images/bo.jpeg" alt="Guide"><p>Guide</p></div>
-                <div class="employee"><img src="images/jb.jpeg" alt="Customer Support"><p>Customer Support</p></div>
-                <div class="employee"><img src="images/dt.jpeg" alt="Operations"><p>Operations</p></div>
+                <figure class="employee">
+                    <img src="images/bo.jpeg" alt="Guide">
+                    <figcaption>Guide</figcaption>
+                </figure>
+                <figure class="employee">
+                    <img src="images/jb.jpeg" alt="Customer Support">
+                    <figcaption>Customer Support</figcaption>
+                </figure>
+                <figure class="employee">
+                    <img src="images/dt.jpeg" alt="Operations">
+                    <figcaption>Operations</figcaption>
+                </figure>
             </div>
         </section>
         
         <section class="contact-form">
             <h2>Send Us a Message</h2>
             <form action="submit_form.php" method="POST">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="subject">Subject:</label>
-                <select id="subject" name="subject">
-                    <option value="general">General Inquiry</option>
-                    <option value="reservation">Reservation Question</option>
-                    <option value="suggestion">Website Suggestion</option>
-                </select>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <input type="checkbox" id="newsletter" name="newsletter">
-                <label for="newsletter">Please subscribe me to the monthly newsletter</label>
-                
-                <button type="submit">Submit</button>
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="subject">Subject:</label>
+                    <select id="subject" name="subject">
+                        <option value="general">General Inquiry</option>
+                        <option value="reservation">Reservation Question</option>
+                        <option value="suggestion">Website Suggestion</option>
+                    </select>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </fieldset>
             </form>
         </section>
     </main>
@@ -88,9 +99,18 @@
     <footer>
         <p>&copy; 2025 White Water Rafting | Created by Zhili Zhong</p>
         <nav class="social-links">
-            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="images/ins.png" alt="Instagram"></a>
+            <figure>
+                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                <figcaption>Facebook</figcaption>
+            </figure>
+            <figure>
+                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+                <figcaption>Twitter</figcaption>
+            </figure>
+            <figure>
+                <a href="#"><img src="images/ins.png" alt="Instagram"></a>
+                <figcaption>Instagram</figcaption>
+            </figure>
         </nav>
     </footer>
 </body>
