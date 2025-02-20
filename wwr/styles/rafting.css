@@ -304,3 +304,9 @@ button {
 button:hover {
     background-color: #1b3a57;
 }
+.google-map {
+    border: 0;
+    width: 100%;
+    max-width: 600px; /* 防止地图过大 */
+    height: 300px;
+}
